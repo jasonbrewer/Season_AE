@@ -1,3 +1,5 @@
+> STATUS: STALE. This describes a backup feature that has been removed.
+> A full rewrite is in progress. Do not implement from this file.
 # Season Assistant Editor — Functional & UI Specification
 
 **Repo:** `Season_AE`

@@ -3,68 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Footage Pipeline — Backup</title>
+  <title>Season Assistant Editor</title>
   <link rel="icon" href="data:," />
   <link rel="stylesheet" href="/static/styles.css" />
 </head>
 <body>
   <main>
-    <h1>Footage Pipeline <span class="stage">Backup</span></h1>
-
-    <section class="card">
-      <h2>Destination</h2>
-      <p class="hint">The backup root is saved and reused for every run.</p>
-      <div class="row">
-        <code id="backup-root" class="path">Loading…</code>
-        <button id="pick-dest" type="button">Set / change…</button>
-      </div>
-      <p id="dest-warning" class="warn hidden"></p>
-    </section>
-
-    <section class="card">
-      <h2>Source</h2>
-      <p class="hint">Chosen fresh each run with the native macOS folder picker.</p>
-      <div class="row">
-        <code id="source-path" class="path muted">No folder chosen</code>
-        <button id="pick-source" type="button">Choose folder…</button>
-      </div>
-    </section>
+    <h1>Season Assistant Editor</h1>
 
     <section class="card">
       <div class="row">
-        <button id="start" type="button" class="primary" disabled>Start backup</button>
-        <span id="start-note" class="hint"></span>
+        <code id="folder-path" class="path muted">No folder chosen</code>
+        <button id="pick-folder" type="button">Choose folder…</button>
       </div>
       <p id="error" class="error hidden"></p>
     </section>
 
-    <section id="progress-card" class="card hidden">
-      <h2>Progress</h2>
-      <div class="bar"><div id="bar-fill"></div></div>
-      <dl class="stats">
-        <div><dt>Files</dt><dd id="p-files">0 / 0</dd></div>
-        <div><dt>Bytes</dt><dd id="p-bytes">0 / 0</dd></div>
-        <div><dt>Phase</dt><dd id="p-phase">—</dd></div>
-      </dl>
-      <p class="hint">Current: <code id="p-current">—</code></p>
-    </section>
-
-    <section id="report-card" class="card hidden">
-      <h2>Report <span id="verdict" class="verdict"></span></h2>
-      <dl class="stats">
-        <div><dt>Copied</dt><dd id="r-copied">0</dd></div>
-        <div><dt>Skipped</dt><dd id="r-skipped">0</dd></div>
-        <div><dt>Conflicts</dt><dd id="r-conflicts">0</dd></div>
-        <div><dt>Failures</dt><dd id="r-failed">0</dd></div>
-        <div><dt>Symlinks skipped</dt><dd id="r-symlinks">0</dd></div>
-      </dl>
-      <p class="hint">Manifest: <code id="r-manifest">—</code></p>
-      <p class="hint">Log: <code id="r-log">—</code></p>
-      <div id="issues" class="issues hidden">
-        <h3>Needs attention</h3>
-        <ul id="issue-list"></ul>
-        <p id="issue-more" class="hint hidden"></p>
-      </div>
+    <section class="card">
+      <p class="hint">Triage — not yet built.</p>
     </section>
   </main>
   <script src="/static/app.js"></script>
